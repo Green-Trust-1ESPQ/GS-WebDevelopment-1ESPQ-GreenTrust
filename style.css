@@ -307,3 +307,28 @@ body {
     display:block;
     border-radius:16px;
 }
+
+
+
+
+footer {
+    padding: 60px 8%;
+    text-align: center;
+    background: #050b0d;
+}
+
+footer h3 {
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #b5b5b5;
+    max-width: 600px;
+    margin: auto auto 20px;
+    line-height: 1.8;
+}
+
+footer small {
+    color: #888;
+}
