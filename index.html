@@ -1,11 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenTrust</title>
+    <title>Green Trust</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte Poppins via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- emojis para melhor visualização visual dos problemas  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>🌍 GREEN-TRUST</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#tecnologias">Tecnologia</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#publico">Público-Alvo</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#dashboard">Aplicação</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- ================= Home Page ================= -->
+    <section id="home" class="home">
+
+        <div class="home-content">
+
+            <span class="home-tag">
+                🌍 Monitoramento espacial inteligente 
+            </span>
+
+            <h1>
+                O mercado de carbono ainda enfrenta auditorias lentas e pouco acessíveis
+            </h1>
+
+            <p>
+                Pequenos produtores enfrentam dificuldades para participar do mercado devido ao alto custo das auditorias ambientais tradicionais. A falta de monitoramento contínuo aumenta riscos de fraude, degradação ambiental e perda de confiança nos créditos de carbono.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#beneficios" class="btn-primary">
+                    Conheça os benefícios
+                </a>
+
+                <a href="#dashboard" class="btn-secondary">
+                    Ver Dashboard
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ================= Problema  ================= -->
+    <section id="problema" class="section">
+
+        <div class="section-title">
+            <span>01</span>
+            <h2>O Problema</h2>
+        </div>
+
+        <div class="grid-3">
+
+            <article class="card">
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <h3>Auditorias Caras</h3>
+
+                <p>
+                    Auditorias ambientais tradicionais exigem equipes
+                    especializadas e visitas presenciais frequentes.
+                </p>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h3>Greenwashing</h3>
+
+                <p>
+                    Falta de monitoramento contínuo aumenta o risco
+                    de fraudes e créditos de carbono inválidos.
+                </p>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Processo Lento</h3>
+
+                <p>
+                    Problemas ambientais podem levar meses para serem
+                    identificados entre auditorias.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+        <!-- ================= Tecnologias  ================= -->
+    <section id="tecnologias" class="section dark">
+
+        <div class="section-title">
+            <span>02</span>
+            <h2>Tecnologias Utilizadas</h2>
+        </div>
+
+        <div class="grid-4">
+
+            <div class="tech-card">
+                <i class="fa-solid fa-satellite"></i>
+                <h3>Sentinel-2</h3>
+                <p>Monitoramento orbital da vegetação.</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>NDVI</h3>
+                <p>Análise da saúde da cobertura vegetal.</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <p>Processamento de biomassa e CO₂ a partir de APIs espaciais.</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Arduino</h3>
+                <p>Monitoramento local com arduino e sistemas embarcados</p>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ================= Obetivos  ================= -->
+    <section id="objetivos" class="section">
+
+        <div class="section-title">
+            <span>03</span>
+            <h2>Objetivos</h2>
+        </div>
+
+        <div class="grid-3">
+
+            <div class="objective-card">
+                <h3>Automatizar Auditorias</h3>
+
+                <p>
+                    Reduzir dependência de inspeções presenciais.
+                </p>
+            </div>
+
+            <div class="objective-card">
+                <h3>Reduzir Custos</h3>
+
+                <p>
+                    Tornar o mercado acessível para pequenos produtores.
+                </p>
+            </div>
+
+            <div class="objective-card">
+                <h3>Aumentar a Confiabilidade</h3>
+
+                <p>
+                    Monitoramento contínuo e transparente.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ================= Público-Alvo  ================= -->
+    <section id="publico" class="section dark">
+
+        <div class="section-title">
+            <span>04</span>
+            <h2>Público-Alvo</h2>
+        </div>
+
+        <div class="grid-4">
+
+            <div class="card">
+                <i class="fa-solid fa-tractor"></i>
+                <h3>Produtores</h3>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-building"></i>
+                <h3>Empresas ESG</h3>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Investidores</h3>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h3>Órgãos Ambientais</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ================= Benefícios  ================= -->
+    <section id="beneficios" class="section">
+
+        <div class="section-title">
+            <span>05</span>
+            <h2>Benefícios</h2>
+        </div>
+
+        <div class="benefits">
+
+            <div class="benefit">
+                <h3>90%</h3>
+                <p>Redução potencial nos custos de auditoria</p>
+            </div>
+
+            <div class="benefit">
+                <h3>24/7</h3>
+                <p>Monitoramento contínuo</p>
+            </div>
+
+            <div class="benefit">
+                <h3>100%</h3>
+                <p>Rastreabilidade dos dados ambientais</p>
+            </div>
+
+            <div class="benefit">
+                <h3>Global</h3>
+                <p>Aplicável em qualquer região monitorada</p>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ================= Solução/Dashboard  ================= -->
+    <section id="dashboard" class="section dark">
+
+        <div class="section-title">
+            <span>06</span>
+            <h2>Dashboard Simulado Green-Trust</h2>
+        </div>
+
+        <div class="dashboard">
+
+            <div class="metric-card">
+                <h4>NDVI Médio</h4>
+                <span>0.82</span>
+            </div>
+
+            <div class="metric-card">
+                <h4>Biomassa</h4>
+                <span>1.248 tCO₂e</span>
+            </div>
+
+            <div class="metric-card">
+                <h4>Risco Ambiental</h4>
+                <span>32/100</span>
+            </div>
+
+            <div class="metric-card">
+                <h4>Estações Online</h4>
+                <span>5</span>
+            </div>
+
+        </div>
+        <div class="dashboard-images">
+
+            <div class="dashboard-card-image">
+                <h3>Mapa de Áreas Monitoradas</h3>
+                <img src="imgs/areaMonitorada.png" alt="Mapa de Áreas Monitoradas">
+            </div>
+
+            <div class="dashboard-card-image">
+                <h3>Biomassa Estimada (tCO₂e) e Evolução do NDVI</h3>
+                <img src="imgs/biomassa.png" alt="Gráfico de Biomassa" >
+                <img src="imgs/NDVI.png" alt="Gráfico de Evoluão do NDVI" >
+            </div>
+
+        </div>
+
+        <div class="dashboard-info">
+
+            <p>
+               A solução automatiza o monitoramento ambiental, transformando dados de satélite em informações acessíveis para produtores e investidores. Com dados orbitais e sensores locais, usuários identificam riscos, acompanham indicadores e validam créditos de carbono.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <h3>GREEN-TRUST</h3>
+
+        <p>
+            Pedro Alves - 569192 / Anderson Marcolino - 574066 / Felipe Luan - 569565 / Rafaella - 572296 / Caio Cesar - 572906
+        </p>
+
+        <small>
+            Transformando dados orbitais em confiança para o mercado
+            global de créditos de carbono.
+        </small>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
