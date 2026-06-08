@@ -58,6 +58,8 @@ body {
 }
 
 
+
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -131,6 +133,9 @@ body {
 }
 
 
+
+
+
 .section {
     padding: 120px 8%;
 }
@@ -155,6 +160,7 @@ body {
     margin-top: 10px;
     font-size: 2.5rem;
 }
+
 
 
 
@@ -200,3 +206,28 @@ body {
     line-height: 1.8;
 }
 
+
+
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.benefit {
+    background: #12282d;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.benefit h3 {
+    color: #2ecc71;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #b5b5b5;
+}
