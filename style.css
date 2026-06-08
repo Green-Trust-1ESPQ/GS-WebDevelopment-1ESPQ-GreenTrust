@@ -22,7 +22,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: #071013f2;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid #ffffff0d;
     z-index: 999;
@@ -323,4 +322,18 @@ footer p {
 
 footer small {
     color: #888;
+}
+
+
+
+.theme-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.theme-buttons button{
+    cursor:pointer;
+    border:none;
+    background:none;
+    font-size:1.3rem;
 }
