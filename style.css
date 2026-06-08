@@ -56,3 +56,76 @@ body {
 
     color: #2ecc71;
 }
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.70),
+            rgba(0,0,0,0.75)
+        ),
+        url("../imgs/imagem-floresta.avif");
+    background-position: center;
+}
+
+.home-content {
+    max-width: 900px;
+}
+
+.home-tag {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #2ecc711f;
+    color: #2ecc71;
+    border: 1px solid #2ecc7133;
+}
+
+.home h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.home p {
+    color: #b5b5b5;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary, .btn-secondary{
+    border: 1px solid #2ecc71;
+    color: #2ecc71; 
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #2ecc7126;
+    background: #2ecc71;
+    color: #000;
+}
