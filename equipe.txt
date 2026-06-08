@@ -1,0 +1,10 @@
+Green-Trust
+
+Pedro Alves - RM 569192
+Anderson Marcolino - RM 574066 
+Felipe Luan - RM 569565 
+Rafaella - RM 572296 
+Caio Cesar - RM 572906
+
+Link do Repositório no Github:
+https://github.com/Green-Trust-1ESPQ/GS-WebDevelopment-1ESPQ-GreenTrust
