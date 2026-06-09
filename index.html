@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Trust</title>
+    <link rel="stylesheet" href="style.css">
+
     <!-- Fonte Poppins via Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- emojis para melhor visualização visual  -->
+    <!-- emojis para melhor visualização visual dos problemas  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>GreenTrust</title>
-
 </head>
 <body>
     <!-- ================= NAVBAR ================= -->
@@ -31,7 +29,15 @@
                 <li><a href="#publico">Público-Alvo</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#dashboard">Aplicação</a></li>
+                <li><a href="#formulario">Contato</a></li>
+                <li><a href="#quiz">Quiz</a></li>
             </ul>
+
+            <div class="theme-buttons">
+                <button onclick="trocarTema('padrao')">🟢</button>
+                <button onclick="trocarTema('azul')">🔵</button>
+                <button onclick="trocarTema('roxo')">🟣</button>
+            </div>
 
         </nav>
     </header>
@@ -67,7 +73,25 @@
 
     </section>
 
-    <!-- ================= Problema  ================= -->
+    <!-- ================= SlideShow  ================= -->
+    <section class="section dark">
+
+        <div class="slideshow">
+            <img class="slide active" src="imgs/amazonia.jpg" alt="Imagem de cima da floresta amazônica">
+            <img class="slide" src="imgs/amazonia2.jpg" alt="Imagem de lado da floresta amazônica">
+            <img class="slide" src="imgs/floresta.jpg" alt="Floresta densa com árvores altas">
+
+            <div class="slide-content">
+                <h2>Monitoramento Ambiental</h2>
+                <p>
+                    Dados de satélite em tempo real para auditorias de carbono.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+        <!-- ================= Problema  ================= -->
     <section id="problema" class="section">
 
         <div class="section-title">
@@ -114,7 +138,7 @@
 
     </section>
 
-     <!-- ================= Tecnologias  ================= -->
+        <!-- ================= Tecnologias  ================= -->
     <section id="tecnologias" class="section dark">
 
         <div class="section-title">
@@ -152,7 +176,7 @@
 
     </section>
 
-    <!-- ================= Obetivos  ================= -->
+        <!-- ================= Obetivos  ================= -->
     <section id="objetivos" class="section">
 
         <div class="section-title">
@@ -190,7 +214,7 @@
 
     </section>
 
-    <!-- ================= Público-Alvo  ================= -->
+        <!-- ================= Público-Alvo  ================= -->
     <section id="publico" class="section dark">
 
         <div class="section-title">
@@ -224,7 +248,7 @@
 
     </section>
 
-    <!-- ================= Benefícios  ================= -->
+        <!-- ================= Benefícios  ================= -->
     <section id="beneficios" class="section">
 
         <div class="section-title">
@@ -258,7 +282,7 @@
 
     </section>
 
-    <!-- ================= Solução/Dashboard  ================= -->
+        <!-- ================= Solução/Dashboard  ================= -->
     <section id="dashboard" class="section dark">
 
         <div class="section-title">
@@ -313,8 +337,80 @@
         </div>
 
     </section>
-    
 
+        <!-- ================= Formulário  ================= -->
+    <section id="formulario" class="section">
+
+        <div class="section-title">
+            <span>07</span>
+            <h2>Solicitar Orçamento & Auditoria Ambiental</h2>
+        </div>
+
+        <form class="form">
+
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+            </div>
+
+            <div class="input-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" placeholder="Nome da empresa">
+            </div>
+
+            <div class="input-group">
+                <label for="area">Detalhes da Área monitorada</label>
+                <input type="text" id="area" placeholder="Ex: 500 hectares, clima tropical...">
+            </div>
+
+            <button type="submit" class="btn-primary">
+                Enviar Solicitação
+            </button>
+
+        </form>
+    </section>
+
+        <!-- ================= Quiz  ================= -->
+
+    <section id="quiz" class="section dark">
+
+        <div class="section-title">
+            <span>08</span>
+            <h2>Diagnóstico de Potencial de Créditos de Carbono</h2>
+        </div>
+
+        <div class="quiz-card">
+
+            <div class="progress-container">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <p id="progressText">
+                Pergunta 1 de 10
+            </p>
+
+            <h3 id="pergunta"></h3>
+
+            <div id="opcao"></div>
+
+            <button id="proximoBtn" class="btn-primary">
+                Próximo
+            </button>
+
+        </div>
+
+        <div id="resultadoQuiz"></div>
+
+    </section>
+
+        <!-- ================= Footer  ================= -->
     <footer>
         <h3>GREEN-TRUST</h3>
 
@@ -327,5 +423,8 @@
             global de créditos de carbono.
         </small>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
